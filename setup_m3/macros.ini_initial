@@ -1,0 +1,3 @@
+INSTALLROOT_F28M35X_V160 = ../../../../
+INSTALLROOT_FPU_FASTRTS_V100 = ../../../../../../../libs/math/FPUfastRTS/V100
+

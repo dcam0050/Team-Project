@@ -1,0 +1,1 @@
+"./startup_ccs.obj" "./setup_m3.obj" -l"C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/setup_m3/m3/ccs/../../../../MWare/cmd/F28M35x_generic_M3_FLASH.cmd" -l"rtsv7M3_T_le_eabi.lib" "C:/ti/controlSUITE/device_support/f28m35x/v160/MWare/driverlib/ccs/Debug/driverlib.lib" 

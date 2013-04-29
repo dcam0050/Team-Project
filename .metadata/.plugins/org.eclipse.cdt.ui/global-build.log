@@ -1,0 +1,98 @@
+
+**** Clean-only build of configuration Flash for project epwm_adc_soc_c28 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k -j 4 clean 
+DEL /F  "epwm_adc_soc.out"
+DEL /F "F28M35x_Adc.pp" "F28M35x_DefaultIsr.pp" "F28M35x_EPwm.pp" "F28M35x_GlobalVariableDefs.pp" "F28M35x_Gpio.pp" "F28M35x_PieCtrl.pp" "F28M35x_PieVect.pp" "F28M35x_SysCtrl.pp" "Inner_Loop.pp" "PeripheralConfigFuncs.pp" "Setup.pp" "main.pp" 
+DEL /F "F28M35x_Adc.obj" "F28M35x_CodeStartBranch.obj" "F28M35x_DefaultIsr.obj" "F28M35x_EPwm.obj" "F28M35x_GlobalVariableDefs.obj" "F28M35x_Gpio.obj" "F28M35x_PieCtrl.obj" "F28M35x_PieVect.obj" "F28M35x_SysCtrl.obj" "F28M35x_usDelay.obj" "Inner_Loop.obj" "PeripheralConfigFuncs.obj" "Setup.obj" "epwm_adc_soc.obj" 
+DEL /F "F28M35x_CodeStartBranch.pp" "F28M35x_usDelay.pp" 
+Could Not Find C:\Users\Daniel\Documents\GitHub\Team-Project\epwm_adc_soc_c28\Flash\F28M35x_CodeStartBranch.pp
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Flash for project epwm_adc_soc_c28 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k -j 4 all 
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Adc.c'
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_CodeStartBranch.asm'
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_DefaultIsr.c'
+'Building file: ../F28M35x_EPwm.c'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_Adc.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Adc.c"
+'Invoking: C2000 Compiler'
+'Invoking: C2000 Compiler'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_DefaultIsr.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_DefaultIsr.c"
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_CodeStartBranch.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_CodeStartBranch.asm"
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_EPwm.pp"  "../F28M35x_EPwm.c"
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_CodeStartBranch.asm'
+' '
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/source/F28M35x_GlobalVariableDefs.c'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_GlobalVariableDefs.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/source/F28M35x_GlobalVariableDefs.c"
+'Finished building: ../F28M35x_EPwm.c'
+' '
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Gpio.c'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_Gpio.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Gpio.c"
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_DefaultIsr.c'
+' '
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_PieCtrl.c'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_PieCtrl.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_PieCtrl.c"
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Gpio.c'
+' '
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Adc.c'
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_PieVect.c'
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_PieCtrl.c'
+' '
+'Invoking: C2000 Compiler'
+' '
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_PieVect.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_PieVect.c"
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_SysCtrl.c'
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_usDelay.asm'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_SysCtrl.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_SysCtrl.c"
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="F28M35x_usDelay.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_usDelay.asm"
+"C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_SysCtrl.c", line 346: warning: variable "temp" was set but never used
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_usDelay.asm'
+' '
+'Building file: ../Inner_Loop.c'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="Inner_Loop.pp"  "../Inner_Loop.c"
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_PieVect.c'
+' '
+'Building file: ../PeripheralConfigFuncs.c'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="PeripheralConfigFuncs.pp"  "../PeripheralConfigFuncs.c"
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_SysCtrl.c'
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/source/F28M35x_GlobalVariableDefs.c'
+'Finished building: ../Inner_Loop.c'
+' '
+' '
+'Building file: ../Setup.c'
+' '
+'Building file: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/epwm_adc_soc/c28/epwm_adc_soc.c'
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="Setup.pp"  "../Setup.c"
+'Invoking: C2000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="main.pp"  "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/epwm_adc_soc/c28/epwm_adc_soc.c"
+"C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/epwm_adc_soc/c28/epwm_adc_soc.c", line 42: warning: function declared implicitly
+'Finished building: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/epwm_adc_soc/c28/epwm_adc_soc.c'
+' '
+'Finished building: ../PeripheralConfigFuncs.c'
+' '
+'Finished building: ../Setup.c'
+' '
+'Building target: epwm_adc_soc.out'
+'Invoking: C2000 Linker'
+"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch -z -m"epwm_adc_soc.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/lib" -i"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" -i"C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/lib" --reread_libs --entry_point=code_start --rom_model -o "epwm_adc_soc.out"  -l"C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/epwm_adc_soc/c28/ccs/../../../../F28M35x_common/cmd/F28M35x_generic_C28_FLASH.cmd" -l"rts2800_fpu32_fast_supplement.lib" -l"rts2800_fpu32.lib" "./epwm_adc_soc.obj" "./Setup.obj" "./PeripheralConfigFuncs.obj" "./Inner_Loop.obj" "./F28M35x_usDelay.obj" "./F28M35x_SysCtrl.obj" "./F28M35x_PieVect.obj" "./F28M35x_PieCtrl.obj" "./F28M35x_Gpio.obj" "./F28M35x_GlobalVariableDefs.obj" "./F28M35x_EPwm.obj" "./F28M35x_DefaultIsr.obj" "./F28M35x_CodeStartBranch.obj" "./F28M35x_Adc.obj" "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/cmd/F28M35x_Headers_nonBIOS.cmd" 
+<Linking>
+warning: entry-point symbol other than "_c_int00" specified:  "code_start"
+'Finished building target: epwm_adc_soc.out'
+' '
+
+**** Build Finished ****
