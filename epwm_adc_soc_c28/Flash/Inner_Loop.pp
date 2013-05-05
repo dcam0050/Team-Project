@@ -33,8 +33,15 @@ Inner_Loop.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/in
 Inner_Loop.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_Dma_defines.h
 Inner_Loop.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_AnalogSysCtrl_defines.h
 Inner_Loop.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_DefaultISR.h
-Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h
+Inner_Loop.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/eqep_pos_speed/c28/Example_posspeed.h
+Inner_Loop.obj: C:/ti/controlSUITE/libs/math/IQmath/v160/include/IQmathLib.h
+Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/math.h
 Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/linkage.h
+Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/float.h
+Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlib.h
+Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlibf.h
+Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/limits.h
+Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h
 Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdbool.h
 Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/yvals.h
 Inner_Loop.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdarg.h
@@ -73,8 +80,15 @@ C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_I2
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_Dma_defines.h: 
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_AnalogSysCtrl_defines.h: 
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_DefaultISR.h: 
-C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h: 
+C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/eqep_pos_speed/c28/Example_posspeed.h: 
+C:/ti/controlSUITE/libs/math/IQmath/v160/include/IQmathLib.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/math.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/linkage.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/float.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlib.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlibf.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/limits.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdbool.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/yvals.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdarg.h: 

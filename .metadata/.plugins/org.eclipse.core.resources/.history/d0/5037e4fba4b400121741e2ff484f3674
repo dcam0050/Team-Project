@@ -1,0 +1,33 @@
+/*
+ * OuterLoop.c
+ *
+ *  Created on: Apr 30, 2013
+ *      Author: Daniel
+ */
+
+#include "Functions.h"
+bool start = true;
+
+
+interrupt void Outer_Loop(void)
+{
+	if(start == true)
+	{
+		//clear all arrays and reset qep counts
+		EQep1Regs.QEPCTL.bit.SWI=1;
+		EQep1Regs.QEPCTL.bit.SWI=0;
+	}
+	else
+	{
+
+		//Calculate algorithm
+
+		//output PWM
+
+		 PieCtrlRegs.PIEACK.all = PIEACK_GROUP3; // Acknowledge interrupt to PIE
+		 return;
+	}
+
+}
+
+

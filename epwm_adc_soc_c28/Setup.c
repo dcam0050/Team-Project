@@ -8,7 +8,7 @@
 
 void Setup(void)
 {
-	// Step 1. Initialize System Control for Control and Analog Subsytems
+	// Step 1. Initialize System Control for Control and Analog Subsystems
 	// Enable Peripheral Clocks
 	// This example function is found in the F28M35x_SysCtrl.c file.
 	    InitSysCtrl();
@@ -18,22 +18,23 @@ void Setup(void)
 	   memcpy(&RamfuncsRunStart, &RamfuncsLoadStart, (size_t)&RamfuncsLoadSize);
 	#endif
 
-	    EDIS;
-
 	// Step 2. Initialize GPIO:
 	// This example function is found in the F28M35x_Gpio.c file and
 	// illustrates how to set the GPIO to it's default state.
 	    InitGpio();  // Skipped for this example
+	    InitEQep1Gpio();
 	    InitEPwm3Gpio();
+	    InitEPwm2Gpio();
 	    InitEPwm1Gpio();
 	    EALLOW;
-	   // GpioG1CtrlRegs.GPCDIR.bit.GPIO70 = 1;
+	    GpioG1CtrlRegs.GPADIR.bit.GPIO5 = 1;	//Set Pin A.5 for Absolute Encoder Direction Control
+	    GpioG1CtrlRegs.GPADIR.bit.GPIO6 = 1;	//Set Pin A.6 for Absolute Encoder Latch Control
 	    GpioG1CtrlRegs.GPBDIR.bit.GPIO32  = 1;  // Set as output
 	    GpioG1CtrlRegs.GPBMUX1.bit.GPIO32 = 3;  // Select EPWM1SOCA as driving source
-	//    GpioG1CtrlRegs.GPBDIR.bit.GPIO33  = 1;  // Set as output
-	//    GpioG1CtrlRegs.GPBMUX1.bit.GPIO33 = 3;  // Select EPWM1SOCB as driving source
 	    EDIS;
-	 //   GpioG1DataRegs.GPCDAT.bit.GPIO70 = 1;// turn off LED
+	    GpioG1DataRegs.GPADAT.bit.GPIO5 = 0;	//Increasing count in clockwise direction
+	    GpioG1DataRegs.GPADAT.bit.GPIO6 = 1;	//Disable Latch => Continuous updating of output lines
+
 
 	// Step 3. Clear all interrupts and initialize PIE vector table:
 	// Disable CPU interrupts
@@ -60,27 +61,32 @@ void Setup(void)
 	// Interrupts that are used in this example are re-mapped to
 	// ISR functions found within this file.
 	   EALLOW; // This is needed to write to EALLOW protected register
-	   PieVectTable.ADCINT1 = &inner_loop;
+	   PieVectTable.ADCINT1 = &Inner_Loop;
+	   PieVectTable.EPWM2_INT = &Outer_Loop;
 	   EDIS;   // This is needed to disable write to EALLOW protected registers
 
 	// Step 4. Initialize all the Device Peripherals:
 	// This function is found in F28M35x_InitPeripherals.c
 	// InitPeripherals(); // Not required for this example
-	    InitAdc1(); // For this example, init the ADC
+	    InitAdc1();
+	    InitAdc2();
 
 	    EALLOW;
 		SysCtrlRegs.PCLKCR0.bit.TBCLKSYNC = 0;
 		EDIS;
-		InitEPwm3Example();
+		EPwmConfig();
 		EALLOW;
-		SysCtrlRegs.PCLKCR0.bit.TBCLKSYNC = 1;
+		SysCtrlRegs.PCLKCR0.bit.TBCLKSYNC = 5;
 		EDIS;
 
 	// Step 5. User specific code, enable interrupts:
 	// Enable ADCINT1 in PIE
-	    PieCtrlRegs.PIEIER1.bit.INTx1 = 1;  // Enable INT 1.1 in the PIE
+	    PieCtrlRegs.PIEIER1.bit.INTx1 = 1;  // Enable INT 1.1 in the PIE - ADC1 Conversion Ready
+	    PieCtrlRegs.PIEIER3.bit.INTx2 = 1;	// Enable INT 3.2 in the PIE - Timer 2 Interrupt
 	    IER |= M_INT1;                      // Enable CPU Interrupt 1
+	    IER |= M_INT3;						// Enable CPU Interrupt 3
 	    EINT;                               // Enable Global interrupt INTM
 	    ERTM;                               // Enable Global realtime interrupt DBGM
+	    return;
 }
 

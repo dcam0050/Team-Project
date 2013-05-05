@@ -1,10 +1,10 @@
 ******************************************************************************
                   TI ARM Linker PC v5.0.1                      
 ******************************************************************************
->> Linked Thu Apr 25 16:30:38 2013
+>> Linked Sat May 04 11:16:56 2013
 
 OUTPUT FILE NAME:   <setup_m3.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 002020c5
+ENTRY POINT SYMBOL: "_c_int00"  address: 002020cd
 
 
 MEMORY CONFIGURATION
@@ -15,7 +15,7 @@ MEMORY CONFIGURATION
   CSM_RSVD_Z1           00200024   0000000c  00000000  0000000c  RWIX
   RESETISR              00200030   00000008  00000006  00000002  R  X
   INTVECS               00200200   000001b0  000001b0  00000000  R  X
-  FLASH1                00200400   0001fc00  00001e92  0001dd6e  R  X
+  FLASH1                00200400   0001fc00  00001e9a  0001dd66  R  X
   FLASH2                00260000   0001ff00  00000000  0001ff00  R  X
   CSM_RSVD_Z2           0027ff00   000000dc  00000000  000000dc  RWIX
   CSM_ECSL_Z2           0027ffdc   00000024  00000000  00000024  RWIX
@@ -36,10 +36,10 @@ run origin  load origin   length   init length attrs members
   00200030    00200030    00000006   00000006    r-x .resetisr
 00200200    00200200    000001b0   000001b0    r--
   00200200    00200200    000001b0   000001b0    r-- .intvecs
-00200400    00200400    00001e98   00001e98    r-x
-  00200400    00200400    00001d56   00001d56    r-x .text
-  00202158    00202158    00000104   00000104    r-- .const
-  00202260    00202260    00000038   00000038    r-- .cinit
+00200400    00200400    00001ea0   00001ea0    r-x
+  00200400    00200400    00001d5e   00001d5e    r-x .text
+  00202160    00202160    00000104   00000104    r-- .const
+  00202268    00202268    00000038   00000038    r-- .cinit
 20000000    20000000    000002b0   00000000    rw-
   20000000    20000000    000001b0   00000000    rw- .vtable
   200001b0    200001b0    00000100   00000000    rw- .stack
@@ -59,42 +59,42 @@ section   page    origin      length       input sections
 .intvecs   0    00200200    000001b0     
                   00200200    000001b0     startup_ccs.obj (.intvecs)
 
-.text      0    00200400    00001d56     
+.text      0    00200400    00001d5e     
                   00200400    00000970     driverlib.lib : sysctl.obj (.text)
                   00200d70    0000057c                   : ipc_lite.obj (.text)
                   002012ec    0000044c                   : gpio.obj (.text)
                   00201738    000002b4                   : interrupt.obj (.text)
                   002019ec    00000194                   : ipc_util.obj (.text)
-                  00201b80    00000184     setup_m3.obj (.text)
-                  00201d04    00000100     driverlib.lib : ram.obj (.text)
-                  00201e04    000000ac                   : watchdog.obj (.text)
-                  00201eb0    0000009c     rtsv7M3_T_le_eabi.lib : memcpy_t2.obj (.text)
-                  00201f4c    00000094                           : auto_init.obj (.text)
-                  00201fe0    0000005e                           : copy_decompress_rle.obj (.text)
-                  0020203e    00000002     --HOLE-- [fill = 0]
-                  00202040    00000044                           : cpy_tbl.obj (.text)
-                  00202084    00000040                           : exit.obj (.text)
-                  002020c4    00000034                           : boot.obj (.text)
-                  002020f8    00000018                           : args_main.obj (.text)
-                  00202110    00000014                           : _lock.obj (.text)
-                  00202124    00000012                           : copy_zero_init.obj (.text:decompress:ZI)
-                  00202136    0000000e                           : copy_decompress_none.obj (.text:decompress:none)
-                  00202144    00000006     driverlib.lib : sysctl.obj (.text:SysCtlDelay)
-                  0020214a    00000006     rtsv7M3_T_le_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
-                  00202150    00000006     startup_ccs.obj (.text)
+                  00201b80    0000018c     setup_m3.obj (.text)
+                  00201d0c    00000100     driverlib.lib : ram.obj (.text)
+                  00201e0c    000000ac                   : watchdog.obj (.text)
+                  00201eb8    0000009c     rtsv7M3_T_le_eabi.lib : memcpy_t2.obj (.text)
+                  00201f54    00000094                           : auto_init.obj (.text)
+                  00201fe8    0000005e                           : copy_decompress_rle.obj (.text)
+                  00202046    00000002     --HOLE-- [fill = 0]
+                  00202048    00000044                           : cpy_tbl.obj (.text)
+                  0020208c    00000040                           : exit.obj (.text)
+                  002020cc    00000034                           : boot.obj (.text)
+                  00202100    00000018                           : args_main.obj (.text)
+                  00202118    00000014                           : _lock.obj (.text)
+                  0020212c    00000012                           : copy_zero_init.obj (.text:decompress:ZI)
+                  0020213e    0000000e                           : copy_decompress_none.obj (.text:decompress:none)
+                  0020214c    00000006     driverlib.lib : sysctl.obj (.text:SysCtlDelay)
+                  00202152    00000006     rtsv7M3_T_le_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  00202158    00000006     startup_ccs.obj (.text)
 
-.const     0    00202158    00000104     
-                  00202158    00000054     driverlib.lib : sysctl.obj (.const)
-                  002021ac    00000048                   : gpio.obj (.const:g_pulGPIOBaseAddrs)
-                  002021f4    00000048                   : interrupt.obj (.const:g_pulRegs)
-                  0020223c    00000020                   : interrupt.obj (.const)
+.const     0    00202160    00000104     
+                  00202160    00000054     driverlib.lib : sysctl.obj (.const)
+                  002021b4    00000048                   : gpio.obj (.const:g_pulGPIOBaseAddrs)
+                  002021fc    00000048                   : interrupt.obj (.const:g_pulRegs)
+                  00202244    00000020                   : interrupt.obj (.const)
 
-.cinit     0    00202260    00000038     
-                  00202260    00000010     (.cinit..data.load) [load image, compression = rle]
-                  00202270    0000000c     (__TI_handler_table)
-                  0020227c    00000004     --HOLE-- [fill = 0]
-                  00202280    00000008     (.cinit..vtable.load) [load image, compression = zero_init]
-                  00202288    00000010     (__TI_cinit_table)
+.cinit     0    00202268    00000038     
+                  00202268    00000010     (.cinit..data.load) [load image, compression = rle]
+                  00202278    0000000c     (__TI_handler_table)
+                  00202284    00000004     --HOLE-- [fill = 0]
+                  00202288    00000008     (.cinit..vtable.load) [load image, compression = zero_init]
+                  00202290    00000010     (__TI_cinit_table)
 
 .vtable    0    20000000    000001b0     UNINITIALIZED
                   20000000    000001b0     driverlib.lib : interrupt.obj (.vtable)
@@ -121,14 +121,14 @@ PUTREADIDX
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00202288 records: 2, size/record: 8, table size: 16
-	.data: load addr=00202260, load size=00000010 bytes, run addr=20004900, run size=00000014 bytes, compression=rle
-	.vtable: load addr=00202280, load size=00000008 bytes, run addr=20000000, run size=000001b0 bytes, compression=zero_init
+__TI_cinit_table @ 00202290 records: 2, size/record: 8, table size: 16
+	.data: load addr=00202268, load size=00000010 bytes, run addr=20004900, run size=00000014 bytes, compression=rle
+	.vtable: load addr=00202288, load size=00000008 bytes, run addr=20000000, run size=000001b0 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 00202270 records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 00202278 records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_zero_init
 	index: 1, handler: __TI_decompress_rle24
 	index: 2, handler: __TI_decompress_none
@@ -138,7 +138,7 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 
 address    name
 --------   ----
-00202085   C$$EXIT
+0020208d   C$$EXIT
 00201bb5   CPUbasepriGet
 00201ba7   CPUbasepriSet
 00201b81   CPUcpsid
@@ -216,9 +216,9 @@ address    name
 0020175d   IntRAMVTable
 0020176b   IntRegister
 00201795   IntUnregister
-00201d91   RAMControlInitL0L3Ram
-00201d2b   RAMControlInitM1MsgRam
-00201d05   RAMMReqSharedMemAccess
+00201d99   RAMControlInitL0L3Ram
+00201d33   RAMControlInitM1MsgRam
+00201d0d   RAMMReqSharedMemAccess
 00000000   RamfuncsLoadSize
 20000000   RamfuncsLoadStart
 20000000   RamfuncsRunStart
@@ -233,7 +233,7 @@ UNDEFED    SHT$$INIT_ARRAY$$Limit
 00200a45   SysCtlClockGet
 00200895   SysCtlClockPllConfig
 0020069d   SysCtlDeepSleep
-00202145   SysCtlDelay
+0020214d   SysCtlDelay
 00200c2f   SysCtlEnableAERRNMI
 00200c49   SysCtlEnableVREGWarnNMI
 0020041f   SysCtlFlashSizeGet
@@ -269,59 +269,59 @@ UNDEFED    SHT$$INIT_ARRAY$$Limit
 00200b5d   SysCtlUSBPLLDisable
 00200b29   SysCtlUSBPLLEnable
 002006e5   SysCtlXPllClockDividerSet
-00201e0d   WatchdogEnable
-00201e8b   WatchdogIntClear
-00201e77   WatchdogIntEnable
-00201e57   WatchdogIntRegister
-00201e81   WatchdogIntStatus
-00201e67   WatchdogIntUnregister
-00201e2b   WatchdogLock
-00201e3b   WatchdogLockState
-00201e4f   WatchdogReloadGet
-00201e4b   WatchdogReloadSet
-00201e21   WatchdogResetDisable
-00201e17   WatchdogResetEnable
-00201e05   WatchdogRunning
-00201e9f   WatchdogStallDisable
-00201e91   WatchdogStallEnable
-00201e33   WatchdogUnlock
-00201e53   WatchdogValueGet
+00201e15   WatchdogEnable
+00201e93   WatchdogIntClear
+00201e7f   WatchdogIntEnable
+00201e5f   WatchdogIntRegister
+00201e89   WatchdogIntStatus
+00201e6f   WatchdogIntUnregister
+00201e33   WatchdogLock
+00201e43   WatchdogLockState
+00201e57   WatchdogReloadGet
+00201e53   WatchdogReloadSet
+00201e29   WatchdogResetDisable
+00201e1f   WatchdogResetEnable
+00201e0d   WatchdogRunning
+00201ea7   WatchdogStallDisable
+00201e99   WatchdogStallEnable
+00201e3b   WatchdogUnlock
+00201e5b   WatchdogValueGet
 200002b0   __STACK_END
 00000100   __STACK_SIZE
-00202288   __TI_CINIT_Base
-00202298   __TI_CINIT_Limit
-00202270   __TI_Handler_Table_Base
-0020227c   __TI_Handler_Table_Limit
+00202290   __TI_CINIT_Base
+002022a0   __TI_CINIT_Limit
+00202278   __TI_Handler_Table_Base
+00202284   __TI_Handler_Table_Limit
 00000001   __TI_args_main
-00201f4d   __TI_auto_init
-00202137   __TI_decompress_none
-0020214b   __TI_decompress_rle24
-00202260   __TI_static_base__
-00202125   __TI_zero_init
-00201eb1   __aeabi_memcpy
-00201eb1   __aeabi_memcpy4
-00201eb1   __aeabi_memcpy8
+00201f55   __TI_auto_init
+0020213f   __TI_decompress_none
+00202153   __TI_decompress_rle24
+00202268   __TI_static_base__
+0020212d   __TI_zero_init
+00201eb9   __aeabi_memcpy
+00201eb9   __aeabi_memcpy4
+00201eb9   __aeabi_memcpy8
 ffffffff   __binit__
 ffffffff   __c_args__
 200001b0   __stack
-002020f9   _args_main
-002020c5   _c_int00
+00202101   _args_main
+002020cd   _c_int00
 20004908   _cleanup_ptr
 2000490c   _dtors_ptr
 20004900   _lock
-0020211f   _nop
-00202117   _register_lock
-00202111   _register_unlock
+00202127   _nop
+0020211f   _register_lock
+00202119   _register_unlock
 20004904   _unlock
-00202089   abort
+00202091   abort
 ffffffff   binit
-00202041   copy_in
-00202091   exit
+00202049   copy_in
+00202099   exit
 20000000   g_pfnRAMVectors
 00200200   g_pfnVectors
 00201bbf   main
 20004910   main_func_sp
-00201eb1   memcpy
+00201eb9   memcpy
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -454,49 +454,49 @@ address    name
 00201bb5   CPUbasepriGet
 00201bb5   IntPriorityMaskGet
 00201bbf   main
-00201d05   RAMMReqSharedMemAccess
-00201d2b   RAMControlInitM1MsgRam
-00201d91   RAMControlInitL0L3Ram
-00201e05   WatchdogRunning
-00201e0d   WatchdogEnable
-00201e17   WatchdogResetEnable
-00201e21   WatchdogResetDisable
-00201e2b   WatchdogLock
-00201e33   WatchdogUnlock
-00201e3b   WatchdogLockState
-00201e4b   WatchdogReloadSet
-00201e4f   WatchdogReloadGet
-00201e53   WatchdogValueGet
-00201e57   WatchdogIntRegister
-00201e67   WatchdogIntUnregister
-00201e77   WatchdogIntEnable
-00201e81   WatchdogIntStatus
-00201e8b   WatchdogIntClear
-00201e91   WatchdogStallEnable
-00201e9f   WatchdogStallDisable
-00201eb1   __aeabi_memcpy
-00201eb1   __aeabi_memcpy4
-00201eb1   __aeabi_memcpy8
-00201eb1   memcpy
-00201f4d   __TI_auto_init
-00202041   copy_in
-00202085   C$$EXIT
-00202089   abort
-00202091   exit
-002020c5   _c_int00
-002020f9   _args_main
-00202111   _register_unlock
-00202117   _register_lock
-0020211f   _nop
-00202125   __TI_zero_init
-00202137   __TI_decompress_none
-00202145   SysCtlDelay
-0020214b   __TI_decompress_rle24
-00202260   __TI_static_base__
-00202270   __TI_Handler_Table_Base
-0020227c   __TI_Handler_Table_Limit
-00202288   __TI_CINIT_Base
-00202298   __TI_CINIT_Limit
+00201d0d   RAMMReqSharedMemAccess
+00201d33   RAMControlInitM1MsgRam
+00201d99   RAMControlInitL0L3Ram
+00201e0d   WatchdogRunning
+00201e15   WatchdogEnable
+00201e1f   WatchdogResetEnable
+00201e29   WatchdogResetDisable
+00201e33   WatchdogLock
+00201e3b   WatchdogUnlock
+00201e43   WatchdogLockState
+00201e53   WatchdogReloadSet
+00201e57   WatchdogReloadGet
+00201e5b   WatchdogValueGet
+00201e5f   WatchdogIntRegister
+00201e6f   WatchdogIntUnregister
+00201e7f   WatchdogIntEnable
+00201e89   WatchdogIntStatus
+00201e93   WatchdogIntClear
+00201e99   WatchdogStallEnable
+00201ea7   WatchdogStallDisable
+00201eb9   __aeabi_memcpy
+00201eb9   __aeabi_memcpy4
+00201eb9   __aeabi_memcpy8
+00201eb9   memcpy
+00201f55   __TI_auto_init
+00202049   copy_in
+0020208d   C$$EXIT
+00202091   abort
+00202099   exit
+002020cd   _c_int00
+00202101   _args_main
+00202119   _register_unlock
+0020211f   _register_lock
+00202127   _nop
+0020212d   __TI_zero_init
+0020213f   __TI_decompress_none
+0020214d   SysCtlDelay
+00202153   __TI_decompress_rle24
+00202268   __TI_static_base__
+00202278   __TI_Handler_Table_Base
+00202284   __TI_Handler_Table_Limit
+00202290   __TI_CINIT_Base
+002022a0   __TI_CINIT_Limit
 20000000   RamfuncsLoadStart
 20000000   RamfuncsRunStart
 20000000   g_pfnRAMVectors

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;epwm_adc_soc_c28/Outer Loop&apos;" deleteContents="false" description="Delete resource &apos;epwm_adc_soc_c28/Outer Loop&apos;" element1="/epwm_adc_soc_c28/Outer Loop" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1367316190569"/>
+</session>

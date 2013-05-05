@@ -49,9 +49,11 @@
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.1063816933" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\ti\controlSUITE\device_support\f28m35x\v160\F28M35x_examples_Control\eqep_pos_speed\c28&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\ti\controlSUITE\libs\math\IQmath\v160\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\ti\controlSUITE\libs\math\FPUfastRTS\V100\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F28M35X_V160}/F28M35x_common/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F28M35X_V160}/F28M35x_headers/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_FPU_FASTRTS_V100}/include&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.1939752586" name="Specify floating point support (--float_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.NO_FAST_BRANCH.1456872201" name="Disable C28x fast branch instructions (--no_fast_branch, -me)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.NO_FAST_BRANCH" value="true" valueType="boolean"/>

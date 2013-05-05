@@ -33,8 +33,15 @@ F28M35x_PieVect.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_comm
 F28M35x_PieVect.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_Dma_defines.h
 F28M35x_PieVect.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_AnalogSysCtrl_defines.h
 F28M35x_PieVect.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_DefaultISR.h
-F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h
+F28M35x_PieVect.obj: C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/eqep_pos_speed/c28/Example_posspeed.h
+F28M35x_PieVect.obj: C:/ti/controlSUITE/libs/math/IQmath/v160/include/IQmathLib.h
+F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/math.h
 F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/linkage.h
+F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/float.h
+F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlib.h
+F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlibf.h
+F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/limits.h
+F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h
 F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdbool.h
 F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/yvals.h
 F28M35x_PieVect.obj: C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdarg.h
@@ -73,8 +80,15 @@ C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_I2
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_Dma_defines.h: 
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_AnalogSysCtrl_defines.h: 
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include/F28M35x_DefaultISR.h: 
-C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h: 
+C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/eqep_pos_speed/c28/Example_posspeed.h: 
+C:/ti/controlSUITE/libs/math/IQmath/v160/include/IQmathLib.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/math.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/linkage.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/float.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlib.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdlibf.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/limits.h: 
+C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/string.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdbool.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/yvals.h: 
 C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include/stdarg.h: 

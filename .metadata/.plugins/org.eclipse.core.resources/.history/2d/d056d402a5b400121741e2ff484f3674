@@ -1,0 +1,44 @@
+/*
+ * OuterLoop.c
+ *
+ *  Created on: Apr 30, 2013
+ *      Author: Daniel
+ */
+
+#include "Functions.h"
+
+
+bool start = true;
+double tita,tita_cont,tita_prev,titadot,x,xdot,theta,tita_neg = 0;
+double tita_hist[3] = {0};
+double x_hist[3] = {0};
+int rev, counts = 0;
+
+interrupt void Outer_Loop(void)
+{
+	if(start == true)
+	{
+		for(i=0;i<4;i++)
+		{
+			tita_hist[i] = 0;
+			x_hist[i] = 0;
+		}
+		EQep1Regs.QEPCTL.bit.SWI=1;
+		EQep1Regs.QEPCTL.bit.SWI=0;
+	}
+	else
+	{
+		//Calculate algorithm
+
+
+
+
+		//output PWM
+
+		 PieCtrlRegs.PIEACK.all = PIEACK_GROUP3; // Acknowledge interrupt to PIE
+		 return;
+	}
+
+}
+
+

@@ -1,0 +1,26 @@
+/*
+ * OuterLoop.c
+ *
+ *  Created on: Apr 30, 2013
+ *      Author: Daniel
+ */
+
+#include "Functions.h"
+
+#define absOffset  0.72444384;
+
+
+
+interrupt void Outer_Loop(void)
+{
+
+	//Calculate algorithm
+
+	//output PWM
+
+	 PieCtrlRegs.PIEACK.all = PIEACK_GROUP3; // Acknowledge interrupt to PIE
+	 return;
+
+}
+
+
