@@ -11,7 +11,7 @@ C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Cod
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_usDelay.asm 
 
 C_SRCS += \
-../Example_posspeed.c \
+../Alarm_ISR.c \
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Adc.c \
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_DefaultIsr.c \
 ../F28M35x_EPwm.c \
@@ -29,7 +29,7 @@ C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Sys
 C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/epwm_adc_soc/c28/epwm_adc_soc.c 
 
 OBJS += \
-./Example_posspeed.obj \
+./Alarm_ISR.obj \
 ./F28M35x_Adc.obj \
 ./F28M35x_CodeStartBranch.obj \
 ./F28M35x_DefaultIsr.obj \
@@ -53,7 +53,7 @@ ASM_DEPS += \
 ./F28M35x_usDelay.pp 
 
 C_DEPS += \
-./Example_posspeed.pp \
+./Alarm_ISR.pp \
 ./F28M35x_Adc.pp \
 ./F28M35x_DefaultIsr.pp \
 ./F28M35x_EPwm.pp \
@@ -71,7 +71,7 @@ C_DEPS += \
 ./main.pp 
 
 C_DEPS__QUOTED += \
-"Example_posspeed.pp" \
+"Alarm_ISR.pp" \
 "F28M35x_Adc.pp" \
 "F28M35x_DefaultIsr.pp" \
 "F28M35x_EPwm.pp" \
@@ -89,7 +89,7 @@ C_DEPS__QUOTED += \
 "main.pp" 
 
 OBJS__QUOTED += \
-"Example_posspeed.obj" \
+"Alarm_ISR.obj" \
 "F28M35x_Adc.obj" \
 "F28M35x_CodeStartBranch.obj" \
 "F28M35x_DefaultIsr.obj" \
@@ -113,7 +113,7 @@ ASM_DEPS__QUOTED += \
 "F28M35x_usDelay.pp" 
 
 C_SRCS__QUOTED += \
-"../Example_posspeed.c" \
+"../Alarm_ISR.c" \
 "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_Adc.c" \
 "C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/source/F28M35x_DefaultIsr.c" \
 "../F28M35x_EPwm.c" \

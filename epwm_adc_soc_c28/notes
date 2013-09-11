@@ -1,5 +1,1 @@
-include absolute encoder alarm to interrupt sources GPIO A.7
 ask what samp_per indicates
-ADC2 software conversion start
-PWM calculation inner loop
-interupt sources listing mapping and ISR

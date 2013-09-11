@@ -3,10 +3,10 @@
 ################################################################################
 
 # Each subdirectory must supply rules for building sources it contributes
-Example_posspeed.obj: ../Example_posspeed.c $(GEN_OPTS) $(GEN_SRCS)
+Alarm_ISR.obj: ../Alarm_ISR.c $(GEN_OPTS) $(GEN_SRCS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/eqep_pos_speed/c28" --include_path="C:/ti/controlSUITE/libs/math/IQmath/v160/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="Example_posspeed.pp" $(GEN_OPTS__FLAG) "$<"
+	"C:/ti/ccsv5/tools/compiler/c2000_6.1.0/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --preinclude="C:/Users/Daniel/Documents/GitHub/Team-Project/epwm_adc_soc_c28/Functions.h" --include_path="C:/ti/ccsv5/tools/compiler/c2000_6.1.0/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_examples_Control/eqep_pos_speed/c28" --include_path="C:/ti/controlSUITE/libs/math/IQmath/v160/include" --include_path="C:/ti/controlSUITE/libs/math/FPUfastRTS/V100/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_common/include" --include_path="C:/ti/controlSUITE/device_support/f28m35x/v160/F28M35x_headers/include" --define="_DEBUG" --define="_FLASH" --define="LARGE_MODEL" --diag_warning=225 --no_fast_branch --preproc_with_compile --preproc_dependency="Alarm_ISR.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

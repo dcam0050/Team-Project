@@ -3,33 +3,36 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="305" key="DIALOG_WIDTH"/>
 		<item value="483" key="DIALOG_Y_ORIGIN"/>
-		<item value="1205" key="DIALOG_X_ORIGIN"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
+		<item value="1205" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Reference" key="selection"/>
+		<item value="//&#x09;Adc2Regs.ADCSOCFRC1.bit.SOC1 =1;//Read ADC2" key="selection"/>
 		<list key="findhistory">
+			<item value="//&#x09;Adc2Regs.ADCSOCFRC1.bit.SOC1 =1;//Read ADC2"/>
+			<item value="Feedback"/>
+			<item value="tita_hist"/>
+			<item value="x_hist"/>
 			<item value="reference"/>
 			<item value="4"/>
 			<item value="tita"/>
-			<item value="Feedback"/>
 			<item value="GPIOPinConfigureCoreSelect"/>
-			<item value="temp"/>
-			<item value="_IQ24div"/>
-			<item value="EPwm1Regs"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Reference"/>
+			<item value="Feedback"/>
+			<item value="tita_hist"/>
+			<item value="Output"/>
 			<item value="Saturation"/>
 			<item value="x"/>
 			<item value="tita"/>
 			<item value="EPwm2Regs"/>
-			<item value="double"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">

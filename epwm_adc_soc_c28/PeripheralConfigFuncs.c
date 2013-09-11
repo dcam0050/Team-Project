@@ -108,6 +108,7 @@ void Config_Current_ADC( void )
     AnalogSysctrlRegs.TRIG5SEL.all     = 5;     // Assigning EPWM1SOCA to TRIGGER 6 of analog subsystem
 
     Adc1Regs.ADCSOC1CTL.bit.TRIGSEL    = 9;    // Assign EPWM1SOCA to SOC1 TRIGSEL
+    Adc1Regs.ADCSOCFRC1.bit.SOC1 =1;
 
     // Set S/H window of 7 ADC clock cycles
     Adc1Regs.ADCSOC1CTL.bit.ACQPS      = 6;
@@ -124,9 +125,12 @@ void Config_PS_ADC( void )
     Adc2Regs.ADCCTL2.bit.ADCNONOVERLAP = 1;     // Set ADC to non-overlap mode
 
     Adc2Regs.ADCSOC1CTL.bit.CHSEL      = 0;     // set SOC1 channel select to ADC2A2
-    //set ADC to software start of conversion
-    // Set S/H window of 7 ADC clock cycles
-    Adc1Regs.ADCSOC1CTL.bit.ACQPS      = 6;
+    Adc2Regs.ADCCTL1.bit.INTPULSEPOS   = 1;     // ADCINT1 trips after AdcResults latch
+    Adc2Regs.INTSEL1N2.bit.INT1E       = 1;     // Enabled ADCINT1
+    Adc2Regs.INTSEL1N2.bit.INT1CONT    = 0;     // Disable ADCINT1 Continuous mode
+    Adc2Regs.INTSEL1N2.bit.INT1SEL     = 0;     // setup EOC0 to trigger ADCINT1 to fire
+    Adc2Regs.ADCSOC1CTL.bit.CHSEL      = 0;     // set SOC1 channel select to ADC1A2
+    Adc2Regs.ADCSOC1CTL.bit.ACQPS      = 6;     // Set S/H window of 7 ADC clock cycles
 
     EDIS;
     return;

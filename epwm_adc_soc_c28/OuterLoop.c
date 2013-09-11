@@ -10,7 +10,7 @@
 
 bool start_outer = true;
 double tita, titadot, x, xdot, theta, tita_neg = 0;
-double VREF, Force, ws, wl, mju, Fsw, Fl, ANGV, e1, e2, Torque_Reference = 0;
+double VREF, Force, ws, wl, mju, Fsw, Fl, ANGV, e1, e2 = 0;
 double xd, O, f1, f2, d2, d1, gwn, phiwn, DV, row, a, E, Ed =0;
 double tita_hist[3] = {0};
 double x_hist[3] = {0};
@@ -18,7 +18,7 @@ double x_hist[3] = {0};
 interrupt void Outer_Loop(void)
 {
 	int i = 0;
-
+	double Torque_Reference;
 	if(start_outer == true)
 	{
 		for(i=0;i<4;i++)
@@ -28,11 +28,11 @@ interrupt void Outer_Loop(void)
 		}
 		EQep1Regs.QEPCTL.bit.SWI=1;
 		EQep1Regs.QEPCTL.bit.SWI=0;
+		start_outer = false;
 	}
 	else
 	{
-		//getData
-		sensorData();
+		sensorData();	//getData
 
 //-----------------------------Transition Controller----------------------//
 
